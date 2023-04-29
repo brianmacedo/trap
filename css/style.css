@@ -1,16 +1,128 @@
 /*Aula 01- 01/04/23 */
 
-body ul{
+body, ul{
     margin: 0px ;
     padding: 0px ;
 }
-
-
-#menu  {
-    height: 100px; ;
-    width: 100% ;
+#header #menu a {
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    transition: 0.3s;
 }
-
-#menu #logo img{
+#header #menu a:hover {
+    color: #0000007a;
+    font-size: 1.6em;
+    transition: 0.3s;
+    text-shadow: 4px 4px 6px #0000007a;
+}
+#logo a:hover {
+    box-shadow: 4px;
+    transition: 0.3s;
+}
+#logo img:hover {
+    box-shadow: 4px 4px 6px #0000007a;
+    transition: 0.3s;
+}
+#logo img{
+    float: left;
+    height: 35px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+#header {
+    width: 100%;
+    position: fixed;
+    z-index: 90;
+    box-sizing: border-box;
     height: 70px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
 }
+#menu {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+}
+#btn-mobile {
+    display: none;
+}
+#carouselExampleInterval {
+    position: relative;
+    z-index: 10;
+    padding-top: 80px;
+}
+/* Estilo CSS Banner */
+.section-banner-home {
+   width: 100%;
+   height: 500px;
+   margin-top: 10px;
+   padding: 50px;
+   background-color: rgb(0, 0, 0); 
+}
+.section-banner-home img {
+    height: 400px;
+}
+.section-banner-home .texto-banner {
+    margin-top: 30px;
+    font-size: 22px;
+}
+.section-banner-home .texto-banner h1 {
+    font-size: 30px;
+    width: 60%;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.section-banner-home .texto-banner p {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.section-banner-home .texto-banner a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    padding: 4px 14px;
+    font-size: 15px;
+}
+/* Fim CSS Banner */
+
+/* CSS Destaque */
+.destaque {
+    background-color: aqua;
+}
+.destaque h2 {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+.destaque p {
+    width: 77%;
+    text-align: center;
+    font-size: 14px;
+    margin: 30px auto;
+}
+
+.destaque figcaption {
+    font-size: 13px;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+.destaque a {
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    color: aqua;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 30px 0;
+}
+/* Fim CSS Destaque */
