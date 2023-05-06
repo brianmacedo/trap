@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Anton);
 /*Aula 01- 01/04/23 */
 
 body, ul{
@@ -7,23 +8,25 @@ body, ul{
 #header #menu a {
     color: black;
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: Anton;
     text-transform: uppercase;
     font-size: 1.25em;
     transition: 0.3s;
+    margin-right: 15px;
+
 }
 #header #menu a:hover {
-    color: #0000007a;
+    color: rgb(255, 255, 255);
     font-size: 1.6em;
     transition: 0.3s;
-    text-shadow: 4px 4px 6px #0000007a;
+    text-shadow: 4px 4px 6px black;
 }
 #logo a:hover {
     box-shadow: 4px;
     transition: 0.3s;
 }
 #logo img:hover {
-    box-shadow: 4px 4px 6px #0000007a;
+    box-shadow: 4px 4px 6px rgb(0, 0, 0);
     transition: 0.3s;
 }
 #logo img{
@@ -32,10 +35,11 @@ body, ul{
     position: relative;
     top: 10px;
     left: 10px;
+    border-radius: 200px; /* Criar border circular na imagem */
 }
 #header {
     width: 100%;
-    position: fixed;
+    position: relative;
     z-index: 90;
     box-sizing: border-box;
     height: 70px;
@@ -44,6 +48,8 @@ body, ul{
     align-items: center;
     justify-content: space-between;
     background: #ffffff;
+    box-shadow: 6px 6px 8px #000000;
+    transition: 0.3s;
 }
 #menu {
     display: flex;
@@ -53,10 +59,29 @@ body, ul{
 #btn-mobile {
     display: none;
 }
+/*
 #carouselExampleInterval {
     position: relative;
     z-index: 10;
     padding-top: 80px;
+}
+*/
+
+#carouselExampleInterval {
+    position: relative;
+    z-index: 10;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 6px 6px rgb(255, 255, 255);
+    transition: 0.3s;
+    place-items: normal legacy;
+    margin-block: 10px;
+    height: auto;
+
+}
+#carouselExampleInterval .carousel-inner img {
+    max-height: auto;
+    width: 100%;
 }
 /* Estilo CSS Banner */
 .section-banner-home {
@@ -64,7 +89,7 @@ body, ul{
    height: 500px;
    margin-top: 10px;
    padding: 50px;
-   background-color: rgb(0, 0, 0); 
+   background-color: rgb(165, 165, 165); 
 }
 .section-banner-home img {
     height: 400px;
@@ -78,23 +103,31 @@ body, ul{
     width: 60%;
     font-weight: 500;
     padding-bottom: 20px;
+    color: black;
 }
 .section-banner-home .texto-banner p {
     font-size: 15px;
     margin-bottom: 20px;
+    color: rgb(0, 0, 0);
 }
 .section-banner-home .texto-banner a {
     color: rgb(255, 255, 255);
-    text-decoration: none;
-    background-color: rgb(255, 255, 255);
+    text-decoration: #000;
+    background-color: rgb(0, 0, 0);
     padding: 4px 14px;
     font-size: 15px;
+}
+.section-banner-home .texto-banner #a:hover {
+    color: yellow;
+    text-shadow: 2px 2px 4px #0000007a;
+    font-size: 18px;
+    font-weight: bold;
 }
 /* Fim CSS Banner */
 
 /* CSS Destaque */
 .destaque {
-    background-color: aqua;
+    background-color: white;
 }
 .destaque h2 {
     margin-top: 15px;
@@ -120,9 +153,81 @@ body, ul{
     justify-content: center;
     display: flex;
     text-decoration: none;
-    color: aqua;
+    color: black;
     font-size: 18px;
     font-weight: bold;
     margin: 30px 0;
 }
 /* Fim CSS Destaque */
+
+/* CSS Novidades */
+
+.novidades .text-body {
+    width: 80%;
+    margin: 70px auto;
+}
+.novidades h2 {
+    color: #000;
+    font-size: 26px;
+    width: 70%;
+}
+.novidades p {
+    color: rgb(0, 0, 0);
+}
+.novidades a {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    text-decoration-color: violet;
+    padding: 6px 12px;
+    background-color: rgb(0, 68, 194);
+    font-weight: 400;
+}
+/* Fim CSS Novidades */
+
+/* Início CSS Galerias */
+
+.galeria {
+    margin: 60px auto 20px;
+}
+.galeria h2 {
+    text-align: center;
+    font-size: 24px;
+}
+.galeria p {
+    text-align: center;
+    width: 50%;
+    margin: 14px auto 50px;
+}
+.galeria .gallery {
+    width: 30%;
+    margin: 14px auto 50px;
+}
+/* Fim CSS Galerias */
+
+/* Início CSS Footer */
+
+.rodape {
+    padding: 50px 50px 0;
+}
+.rodape .info-contato p {
+    margin: 0px;
+}
+.rodape a {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+}
+.rodape a:hover {
+    font-weight: bold;
+}
+.rodape .redes-sociais {
+    display: inline-block;
+}
+.rodape .redes-sociais img {
+    width: 45px;
+    height: 40px;
+}
+.rodape p.direitos {
+    text-align: center;
+    margin-top: 40px;
+}
